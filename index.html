@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clubes de Futbol Populares de Ecuador</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <style>
+        #acordeon .ui-state-active, #acordeon .ui-widget-content .ui-state-active, #acordeon .ui-widget-header .ui-state-active {
+            background: yellow;
+        }
+        .toggler { width: 600px; height: 400px; position: relative; } 
+        #button { padding: .5em 1em; text-decoration: none; }
+        #effect { width: 310px; height: 310px; padding: 0.4em; position: relative; }
+        #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+        .ui-effects-transfer { border: 2px dotted gray; }
+        #draggable { width: 240px; height: auto; } 
+    </style>
+</head>
+<body style="background-color: yellow;"> 
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="info71.html">BARCELONA SC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info62.html">LIGA DE QUITO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info3.html">EMELEC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info4.html">EL NACIONAL</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+        <div class="jumbotron">
+            <h1 class="display-4">BARCELONA SC</h1>
+            <p class="lead">Escudo del club</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="toggler">
+                        <div id="effect" class="ui-widget-content ui-corner-all">
+                            <img src="https://logodownload.org/wp-content/uploads/2020/02/barcelona-sc-logo-6.png" style="max-width: 300px; height: auto" alt="">
+                        </div>
+                    </div>
+                    <h5>Selecciona un efecto para jugar con la imagen del Club</h5> 
+                    <select name="effects" id="effectTypes">
+                        <option value="blind">Blind</option>
+                        <option value="bounce">Bounce</option>
+                        <option value="clip">Clip</option>
+                        <option value="drop">Drop</option>
+                        <option value="explode">Explode</option>
+                        <option value="fade">Fade</option>
+                        <option value="fold">Fold</option>
+                        <option value="highlight">Highlight</option>
+                        <option value="puff">Puff</option>
+                        <option value="pulsate">Pulsate</option>
+                        <option value="scale">Scale</option>
+                        <option value="shake">Shake</option>
+                        <option value="size">Size</option>
+                        <option value="slide">Slide</option>
+                        <option value="transfer">Transfer</option>
+                    </select>
+                       
+                    <button id="button" class="ui-state-default ui-corner-all">Aplicar efecto</button>
+                    <br>
+                    <br>
+                    <h5>Equipación del Club</h5>
+                    <h6>Manten presionado para mover la equipación del club</h6>
+                      <div id="draggable" class="ui-widget-content">
+                        <img src="https://cdn.futbin.com/content/fifa23/img/club_items/kits/j0_110981_0.png" class="img-fluid zoom-in" style="width: 240px; height: auto" alt="Barcelona SC">
+                      </div>
+                    <p class="text-center"></p>
+                </div>
+                <div class="col-md-6">
+                    <div id="acordeon">
+                        <h3 style="color: black;">Nombres</h3>
+                        <div>
+                            <p>
+                                Barcelona Sporting Club también es conocido como "Los Toreros".
+                            </p>
+                        </div>
+                        <h3 style="color: black;">Colores del Club</h3>
+                        <div>
+                            <p>
+                                Los colores característicos de Barcelona SC son amarillo y negro.
+                            </p>
+                        </div>
+                        <h3 style="color: black;">Campeonatos Nacionales</h3>
+                        <div>
+                            <p>
+                                Barcelona SC cuenta con 16 títulos nacionales y 13 subcampeonatos.
+                            </p>
+                        </div>
+                        <h3 style="color: black;">Campeonatos Internacionales</h3>
+                        <div>
+                            <p>
+                                El club ha tenido participaciones destacadas en torneos internacionales como la Copa
+                                Libertadores en el cual ha logrado ser subcampeón en dos ocasiones pero sin ningún
+                                título internacional.
+                            </p>
+                        </div>
+                        <h3 style="color: black;">Estadio</h3>
+                        <div>
+                            <p>
+                                Estadio Monumental Banco Pichincha
+                            </p>
+                            <img src="https://www.elcomercio.com/wp-content/uploads/2021/05/E1SG6pQWEAQzGUC.jpg"  style="max-width: 500px; height: auto" alt="Barcelona SC">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $( function() {
+        
+          function runEffect() {
+      
+            var selectedEffect = $( "#effectTypes" ).val();
+       
+       
+            var options = {};
+        
+            if ( selectedEffect === "scale" ) {
+              options = { percent: 50 };
+            } else if ( selectedEffect === "transfer" ) {
+              options = { to: "#button", className: "ui-effects-transfer" };
+            } else if ( selectedEffect === "size" ) {
+              options = { to: { width: 500, height: 300 } };
+            }
+       
+          
+            $( "#effect" ).effect( selectedEffect, options, 500, callback );
+          };
+       
+        
+          function callback() {
+            setTimeout(function() {
+              $( "#effect" ).removeAttr( "style" ).hide().fadeIn();
+            }, 1000 );
+          };
+       
+  
+          $( "#button" ).on( "click", function() {
+            runEffect();
+            return false;
+          });
+          
+          $( "#acordeon" ).accordion({
+            active: 4
+          });
+          $( function() {
+          $( "#draggable" ).draggable();
+          } );
+        } );
+    </script>
+</body>
+</html>
